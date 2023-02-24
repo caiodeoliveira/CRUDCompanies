@@ -1,7 +1,10 @@
 import React from "react";
-
-// import { Container } from './styles';
+import { S } from "./styles";
 
 export const Companies = () => {
-  return <div />;
+  return (
+    <>
+      <S.InnerAreaContainer></S.InnerAreaContainer>
+    </>
+  );
 };
