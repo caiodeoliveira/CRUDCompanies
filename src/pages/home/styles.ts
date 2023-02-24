@@ -11,26 +11,40 @@ const HomeContainer = styled.main`
 
 const CompanyContainer = styled.div`
   height: 95%;
-  width: 40%;
+  width: 45%;
   background: url(${companyCardBg}) no-repeat;
   border: 2px solid green;
   border-radius: 3px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
+  padding-top: 50px;
+  transition: 700ms;
+  :hover {
+    transition: 700ms;
+    transform: translateY(-10px);
+  }
 `;
 
 const SupplierContainer = styled.div`
   height: 95%;
-  width: 40%;
+  width: 45%;
   background: url(${supplierCardBg}) no-repeat;
   border: 2px solid red;
   border-radius: 3px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
+  padding-top: 50px;
+  transition: 700ms;
+  :hover {
+    transition: 700ms;
+    transform: translateY(-10px);
+  }
 `;
 
 export const S = {

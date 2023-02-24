@@ -5,6 +5,8 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
   }
 
   #root, body, html {
@@ -22,15 +24,4 @@ export default createGlobalStyle`
   ul {
     list-style: none;
   }
-  .fade-in {
-	animation: fadeIn 1.0s ease forwards;
-}
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
 `;
