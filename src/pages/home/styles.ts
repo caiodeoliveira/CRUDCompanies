@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import companyCardBg from "../../common/companyCardBg.jpg";
+import supplierCardBg from "../../common/supplierCardBg.jpg";
 
 const HomeContainer = styled.main`
   height: 100%;
@@ -10,7 +12,7 @@ const HomeContainer = styled.main`
 const CompanyContainer = styled.div`
   height: 95%;
   width: 40%;
-  background-color: white;
+  background: url(${companyCardBg}) no-repeat;
   border: 2px solid green;
   border-radius: 3px;
   display: flex;
@@ -22,7 +24,7 @@ const CompanyContainer = styled.div`
 const SupplierContainer = styled.div`
   height: 95%;
   width: 40%;
-  background-color: white;
+  background: url(${supplierCardBg}) no-repeat;
   border: 2px solid red;
   border-radius: 3px;
   display: flex;
