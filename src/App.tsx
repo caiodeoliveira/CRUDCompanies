@@ -1,11 +1,11 @@
 import GlobalStyle from "./styles/global";
-import { Home } from "./pages/home/Home";
+import { RoutesThree } from "./routes";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <RoutesThree />
     </>
   );
 }
