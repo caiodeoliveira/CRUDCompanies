@@ -100,15 +100,21 @@ const InputChangeCompanyName = styled.input`
   color: green;
   font-size: 26px;
   font-weight: bold;
-  text-align: center;
   outline: none;
 `;
 
-const ChangeCompanyNameIcon = styled.span`
+const ChangeCompanyNameCancelButton = styled.span`
   cursor: pointer;
   position: absolute;
-  top: 5px;
-  right: -0px;
+  top: 1px;
+  right: 0px;
+`;
+
+const ChangeCompanyNameConfirmButton = styled.span`
+  cursor: pointer;
+  position: absolute;
+  top: 3.5px;
+  right: 35px;
 `;
 
 const SuppliersListContainer = styled.div`
@@ -183,5 +189,6 @@ export const S = {
   DeleteIcon,
   InputChangeCompanyName,
   ChangeCompanyNameContainer,
-  ChangeCompanyNameIcon,
+  ChangeCompanyNameCancelButton,
+  ChangeCompanyNameConfirmButton,
 };

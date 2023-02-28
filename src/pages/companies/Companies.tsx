@@ -5,11 +5,13 @@ import { BsPencil } from "react-icons/bs";
 import { TiDelete } from "react-icons/ti";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { FcCancel } from "react-icons/fc";
+import { GiConfirmed } from "react-icons/gi";
 
 export const Companies = () => {
   const [query, setQuery] = React.useState("");
   const [isEditingCompanyName, setIsEditingCompanyName] = React.useState(false);
   const [hasCompanies, setHasCompanies] = React.useState(true); //Alterar o estado para um array.
+  const [companyName, setCompanyName] = React.useState("Tempero da dona Benta");
 
   const handleSubmit = (e: any) => {
     alert(query);
@@ -55,10 +57,18 @@ export const Companies = () => {
                       <S.InputChangeCompanyName
                         type="text"
                         placeholder="Ex.: O dogão"
+                        onChange={(e) => setCompanyName(e.target.value)}
                       />
-                      <S.ChangeCompanyNameIcon onClick={editCompanyName}>
-                        {<FcCancel size="30" color="red" />}
-                      </S.ChangeCompanyNameIcon>
+                      <S.ChangeCompanyNameCancelButton
+                        onClick={editCompanyName}
+                      >
+                        {<FcCancel size="35" color="red" />}
+                      </S.ChangeCompanyNameCancelButton>
+                      <S.ChangeCompanyNameConfirmButton
+                        onClick={editCompanyName}
+                      >
+                        {<GiConfirmed size="30" color="green" />}
+                      </S.ChangeCompanyNameConfirmButton>
                     </S.ChangeCompanyNameContainer>
                   </S.NameAndActionsCompany>
                 </>
@@ -67,7 +77,7 @@ export const Companies = () => {
                   {hasCompanies ? (
                     <>
                       <S.NameAndActionsCompany>
-                        <h1>Tempero da Dona Benta</h1>
+                        <h1>{companyName}</h1>
                         <S.NameAndActionsCompanyIcons>
                           <S.EditIcon onClick={editCompanyName}>
                             {<BsPencil size="45px" color="green" />}
