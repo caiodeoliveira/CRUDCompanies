@@ -1,7 +1,7 @@
 import { S } from "./styles";
 import { UpperArea } from "../../components/UpperArea";
 import React, { useEffect } from "react";
-import { TiDelete, TiLocation } from "react-icons/ti";
+import { TiDelete } from "react-icons/ti";
 import { Form } from "reactstrap";
 import { BsPencil } from "react-icons/bs";
 import { RiDeleteBin5Line } from "react-icons/ri";

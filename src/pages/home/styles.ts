@@ -9,7 +9,7 @@ const HomeContainer = styled.main`
   justify-content: space-around;
 `;
 
-const CompanyContainer = styled.div`
+const CompanyContainer = styled.span`
   height: 95%;
   width: 45%;
   background: url(${companyCardBg}) no-repeat;
@@ -28,7 +28,7 @@ const CompanyContainer = styled.div`
   }
 `;
 
-const SupplierContainer = styled.div`
+const SupplierContainer = styled.span`
   height: 95%;
   width: 45%;
   background: url(${supplierCardBg}) no-repeat;
