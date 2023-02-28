@@ -7,11 +7,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-smooth: always;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
   #root, body, html {
     height: 100%;
   }
+
   #root {
     min-width: 900px;
     min-width: 100vw;
