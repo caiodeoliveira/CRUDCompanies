@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Companies } from "../pages/Companies/Companies";
-import { Home } from "../pages/Home";
-import { Suppliers } from "../pages/Suppliers";
+import { Companies } from "../pages/Companies/Index";
+import { Home } from "../pages/Home/index";
+import { Suppliers } from "../pages/Suppliers/index";
 
 export const RoutesThree = () => {
   return (
