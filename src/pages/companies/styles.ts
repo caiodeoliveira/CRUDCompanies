@@ -6,15 +6,15 @@ const InnerAreaContainer = styled.main`
   text-align: center;
   background: url(${companyPageBg}) no-repeat;
   border-top: 1px solid green;
+  border-bottom: 1px solid green;
   border-radius: 1px;
-  height: 82.2%;
+  height: 78.7%;
   width: 100%;
-  position: absolute;
-  top: 232px;
+  position: fixed;
+  bottom: 0;
   overflow-y: auto;
 `;
 
-// Usar a div abaixo para organizar em tela a resposta da chamada à API:
 const CompaniesNameContainer = styled.div`
   width: 100%;
   height: 90%;

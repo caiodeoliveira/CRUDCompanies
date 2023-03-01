@@ -10,7 +10,7 @@ import { GiConfirmed } from "react-icons/gi";
 export const Companies = () => {
   const [query, setQuery] = React.useState("");
   const [isEditingCompanyName, setIsEditingCompanyName] = React.useState(false);
-  const [hasCompanies, setHasCompanies] = React.useState(true); //Alterar o estado para um array.
+  const [hasCompanies, setHasCompanies] = React.useState(true);
   const [companyName, setCompanyName] = React.useState("Tempero da dona Benta");
 
   const handleSubmit = (e: any) => {

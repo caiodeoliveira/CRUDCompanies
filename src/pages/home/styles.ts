@@ -10,8 +10,8 @@ const HomeContainer = styled.main`
 `;
 
 const CompanyContainer = styled.span`
-  height: 95%;
-  width: 45%;
+  height: 100%;
+  width: 50%;
   background: url(${companyCardBg}) no-repeat;
   border: 2px solid green;
   border-radius: 3px;
@@ -29,8 +29,8 @@ const CompanyContainer = styled.span`
 `;
 
 const SupplierContainer = styled.span`
-  height: 95%;
-  width: 45%;
+  height: 100%;
+  width: 50%;
   background: url(${supplierCardBg}) no-repeat;
   border: 2px solid red;
   border-radius: 3px;

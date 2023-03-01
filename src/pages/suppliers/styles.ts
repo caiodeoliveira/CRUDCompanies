@@ -7,8 +7,9 @@ const InnerAreaContainer = styled.main`
   text-align: center;
   background: url(${companyPageBg}) no-repeat;
   border-top: 1px solid red;
+  border-bottom: 1px solid red;
   border-radius: 1px;
-  height: 78%;
+  height: 77%;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -98,7 +99,7 @@ const InputSearchSuppliers = styled.input`
 const ButtonElement = styled.input`
   width: 20%;
   height: 40%;
-  margin: 10px auto;
+  margin: 3px auto;
   border: 3px solid red;
   border-radius: 5px;
   background-color: white;
