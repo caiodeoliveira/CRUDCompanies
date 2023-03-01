@@ -38,7 +38,7 @@
 2 - type the follow comand: git clone https://github.com/caiodeoliveira/CRUDCompanies-Frontend.git
 3 - Wait till Git complete the project download.
 ```
-3. <h3>Download Node_Modules.zip folder, extract and put on root of project: <a href="" target="_blank">Download Node_Modules.zip</a> 
+3. <h3>Download Node_Modules.zip folder, extract and put on root of project: <a href="https://drive.google.com/drive/folders/1vAg8bpjAsYyVMAVRs1WfgllyCO9NTAh0?usp=share_link" target="_blank">Download Node_Modules.zip</a> 
 (this may take a while) is better to copy from another folder if you already have in your computer</h3>
 
 ```
@@ -57,7 +57,7 @@
 2 - Digite o seguinte comando: git clone https://github.com/caiodeoliveira/CRUDCompanies-Frontend.git
 3 - Aguarde o git baixar o projeto.
 ```
-<h3>3. Baixe a pasta Node_Modules.zip, extraia e coloque na raiz do projeto: <a href="" target="_blank"> Node_Modules.zip</a> 
+<h3>3. Baixe a pasta Node_Modules.zip, extraia e coloque na raiz do projeto: <a href="https://drive.google.com/drive/folders/1vAg8bpjAsYyVMAVRs1WfgllyCO9NTAh0?usp=share_link" target="_blank"> Node_Modules.zip</a> 
 (Isso pode demorar) É melhor copiar de outra pasta caso você já tenha a node_modules na sua máquina.</h3>
 
 ### Siga os passos adiante
