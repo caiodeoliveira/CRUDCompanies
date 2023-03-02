@@ -6,6 +6,7 @@ import { Form } from "reactstrap";
 import { BsPencil } from "react-icons/bs";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { FcCancel } from "react-icons/fc";
+import { Button } from "../../components/Button";
 
 export const Suppliers = () => {
   const [query, setQuery] = React.useState("");
@@ -85,7 +86,7 @@ export const Suppliers = () => {
             placeholder="Bodoquena MS (endereço ou CEP)"
             onChange={(e) => setQuery(e.target.value)}
           />
-          <S.ButtonElement type="submit" value="Buscar" />
+          <Button type="searchSupplierButton" />
         </S.FormContainer>
       </UpperArea>
 
@@ -115,12 +116,18 @@ export const Suppliers = () => {
                       <S.NameAndActionsSuppliers>
                         <h1>Medeiros Distribuidora</h1>
                         <S.NameAndActionsCompanyIcons>
-                          <S.EditIcon onClick={editSupplierName}>
+                          <Button
+                            type="changeNameButton"
+                            onClick={editSupplierName}
+                          >
                             {<BsPencil size="45px" color="green" />}
-                          </S.EditIcon>
-                          <S.DeleteIcon onClick={showModalBeforeDelete}>
+                          </Button>
+                          <Button
+                            type="deleteCompanyOrSupplierButton"
+                            onClick={showModalBeforeDelete}
+                          >
                             {<RiDeleteBin5Line size="45px" color="red" />}
-                          </S.DeleteIcon>
+                          </Button>
                         </S.NameAndActionsCompanyIcons>
                       </S.NameAndActionsSuppliers>
                     </>
@@ -137,63 +144,63 @@ export const Suppliers = () => {
                   <S.CompaniesListContainer>
                     <S.CompaniesTag>
                       <h2>Empresa1</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa2</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                     <S.CompaniesTag>
                       <h2>Empresa3</h2>
-                      <S.DeleteCompanyIcon>
+                      <Button type="deleteCompany">
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteCompanyIcon>
+                      </Button>
                     </S.CompaniesTag>
                   </S.CompaniesListContainer>
                 </>

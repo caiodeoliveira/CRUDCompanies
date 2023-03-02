@@ -128,6 +128,7 @@ const SuppliersListContainer = styled.div`
 `;
 
 const SuppliersTag = styled.div`
+  max-width: 200px;
   color: black;
   background-color: silver;
   border-radius: 5px;

@@ -6,12 +6,14 @@ import { TiDelete } from "react-icons/ti";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { FcCancel } from "react-icons/fc";
 import { GiConfirmed } from "react-icons/gi";
+import { Button } from "../../components/Button";
 
 export const Companies = () => {
   const [query, setQuery] = React.useState("");
   const [isEditingCompanyName, setIsEditingCompanyName] = React.useState(false);
   const [hasCompanies, setHasCompanies] = React.useState(true);
   const [companyName, setCompanyName] = React.useState("Tempero da dona Benta");
+  const [hasSuppliers, setHasSuppliers] = React.useState(true);
 
   const handleSubmit = (e: any) => {
     alert(query);
@@ -22,11 +24,20 @@ export const Companies = () => {
     setIsEditingCompanyName(!isEditingCompanyName);
   };
 
-  const showModalBeforeDelete = (e: any) => {
+  const showModalBeforeDeleteCompany = (e: any) => {
     window.confirm("Tem certeza que deseja exluir a empresa?");
     if (window.confirm()) {
       setHasCompanies(false);
       alert("Empresa exluída com sucesso!");
+      e.preventDefault();
+    }
+  };
+
+  const showModalBeforeDeleteSupplier = (e: any) => {
+    window.confirm("Tem certeza que deseja remover este fornecedor?");
+    if (window.confirm()) {
+      setHasSuppliers(false);
+      alert("Fornecedor(s) removido com sucesso!");
       e.preventDefault();
     }
   };
@@ -42,7 +53,7 @@ export const Companies = () => {
             placeholder="Bodoquena MS (endereço ou CEP)"
             onChange={(e) => setQuery(e.target.value)}
           />
-          <S.ButtonElement type="submit" value="Buscar" />
+          <Button type="searchCompanyButton" />
         </form>
       </UpperArea>
       <S.InnerAreaContainer>
@@ -79,12 +90,18 @@ export const Companies = () => {
                       <S.NameAndActionsCompany>
                         <h1>{companyName}</h1>
                         <S.NameAndActionsCompanyIcons>
-                          <S.EditIcon onClick={editCompanyName}>
+                          <Button
+                            type="changeNameButton"
+                            onClick={editCompanyName}
+                          >
                             {<BsPencil size="45px" color="green" />}
-                          </S.EditIcon>
-                          <S.DeleteIcon onClick={showModalBeforeDelete}>
+                          </Button>
+                          <Button
+                            type="deleteCompanyOrSupplierButton"
+                            onClick={showModalBeforeDeleteCompany}
+                          >
                             {<RiDeleteBin5Line size="45px" color="red" />}
-                          </S.DeleteIcon>
+                          </Button>
                         </S.NameAndActionsCompanyIcons>
                       </S.NameAndActionsCompany>
                     </>
@@ -101,93 +118,138 @@ export const Companies = () => {
                   <>
                     <S.SuppliersTag>
                       <h2>Fornecedor1</h2>
-                      <S.DeleteSupplierIcon>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
                       <h2>Fornecedor2</h2>
-                      <S.DeleteSupplierIcon>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor3</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor4</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                     <S.SuppliersTag>
-                      <h2>Fornecedor5</h2>
-                      <S.DeleteSupplierIcon>
+                      <h2>Fornecedor2</h2>
+                      <Button
+                        type="deleteSupplier"
+                        onClick={showModalBeforeDeleteSupplier}
+                      >
                         {<TiDelete size="30px" color="red" />}
-                      </S.DeleteSupplierIcon>
+                      </Button>
                     </S.SuppliersTag>
                   </>
                 ) : (
