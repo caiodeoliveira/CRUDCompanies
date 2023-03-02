@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# <h1 align="center"> :office: Companies&Suppliers :truck: </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<img src="https://img.shields.io/badge/Status-Done-green?style=for-the-badge">
+</div>
+  
+* [Project Description](#project-description)  
+* [Access to the Project](#access-to-the-project)
+* [Technologies in this project](#technologies-in-this-project)
+* [Run on your computer(en-US)](#run-on-your-computer)
+* [Rode a aplicação em sua máquina(pt-BR)](#rode-a-aplicação-em-sua-máquina)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Description:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Companies and suppliers manager! 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Access to the Project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Deployed on Vercel :white_check_mark: (Click on the React Image :point_right:) <a href="https://companies-frontend.vercel.app/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="5%"></a>
 
-### `npm run build`
+## Technologies in this project:
+<div>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="5%">
+  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="5%">         
+  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="5%">
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run on your computer:
+1. <h3> Download :point_right: <a href="https://git-scm.com/downloads" target="_blank" > Git </a> :point_left: and VSCode IDE: :point_right:<a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>:point_left:</h3>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+1 - Right click on your project directory > "Show more options" > Git Bash Here.
+2 - type the follow comand: git clone https://github.com/caiodeoliveira/CRUDCompanies-Frontend.git
+3 - Wait till Git complete the project download.
+```
+3. <h3>Download Node_Modules.zip folder, extract and put on root of project: <a href="https://drive.google.com/drive/folders/1vAg8bpjAsYyVMAVRs1WfgllyCO9NTAh0?usp=share_link" target="_blank">Download Node_Modules.zip</a> 
+(this may take a while) is better to copy from another folder if you already have in your computer</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+1 - Open VSCODE IDE press CTRL + K + O and select your project directory.
+2 - press CTRL + J to open the terminal > Change to bash terminal clicking on the arrow down button.
+3 - type the follow command to run the application: yarn start
+```
 
-### `npm run eject`
+## Rode a aplicação em sua máquina:
+<h3> 1. Baixe o :point_right: <a href="https://git-scm.com/downloads" target="_blank" > Git </a> :point_left: e o VSCode IDE: :point_right:<a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>:point_left:</h3>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Siga os passos adiante
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+1 - Click com o botão direito na pasta quer baixar o projeto> "Mostrar mais opções/Show more options" > Git Bash Here.
+2 - Digite o seguinte comando: git clone https://github.com/caiodeoliveira/CRUDCompanies-Frontend.git
+3 - Aguarde o git baixar o projeto.
+```
+<h3>3. Baixe a pasta Node_Modules.zip, extraia e coloque na raiz do projeto: <a href="https://drive.google.com/drive/folders/1vAg8bpjAsYyVMAVRs1WfgllyCO9NTAh0?usp=share_link" target="_blank"> Node_Modules.zip</a> 
+(Isso pode demorar) É melhor copiar de outra pasta caso você já tenha a node_modules na sua máquina.</h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Siga os passos adiante
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+1 - Abra O editor de código VSCODE tecle CTRL + K + O e selecione a pasta do seu projeto (CRUDCompanies-Frontend).
+2 - Tecle CTRL + J para abrir o terminal > Troque para o terminal do bash clicando no botão da seta para baixo no canto superior direito do terminal.
+3 - Digite o comando a seguir para rodar a aplicação: yarn start
+```
